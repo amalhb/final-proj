@@ -1,0 +1,128 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Apply Font Family */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading and Paragraph Animations */
+.animated-heading {
+    opacity: 0;
+    animation: slideIn 1.5s ease-in forwards;
+    color: #f97316;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.animated-paragraph {
+    opacity: 0;
+    animation: fadeZoomIn 1.5s ease-in forwards;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #4B5563;
+}
+
+/* Icon Animation */
+.bounce-icon {
+    animation: bounce 2s infinite;
+    transition: transform 0.3s ease;
+}
+
+.bounce-icon:hover {
+    transform: rotate(360deg);
+}
+
+/* Service Card Styling */
+.service-card {
+    border: 1px solid transparent;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    border: 1px solid #f97316;
+    background: linear-gradient(145deg, #fdfdfd, #fafafa);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Animation */
+.hover-animation {
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-animation:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframes for Heading & Paragraph Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeZoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Service Card Title Hover Effect */
+.service-card h3 {
+    transition: color 0.3s ease;
+}
+
+.service-card:hover h3 {
+    color: #f97316;
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slideIn 1s ease-out forwards;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+  }

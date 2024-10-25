@@ -1,0 +1,56 @@
+/* foodMenu.css */
+.hover-animation {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.hover-animation:hover {
+    transform: scale(1.1);
+    color: #ff8c00; /* Change color on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+
+.bounce-icon {
+    transition: transform 0.3s ease;
+}
+
+.bounce-icon:hover {
+    transform: translateY(-5px); /* Slight upward movement */
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
+  /* Additional text color change on hover */
+  .card:hover h3,
+  .card:hover p {
+    color: #f97316; /* Change text color on hover */
+  }
+  
+  /* Animation for images */
+  .card img {
+    transition: transform 0.3s ease; /* Image animation */
+  }
+  
+  .card:hover img {
+    transform: scale(1.05); /* Slight zoom on image hover */
+  }
+
+  .fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.text {
+  opacity: 0;
+  transform: translateY(20px);
+}

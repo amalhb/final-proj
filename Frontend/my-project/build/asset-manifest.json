@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f0a36208.css",
+    "main.js": "/static/js/main.4319d1ba.js",
+    "static/media/fruit.jpg": "/static/media/fruit.1e64f0416f184eebd84a.jpg",
+    "static/media/tunisian.jpg": "/static/media/tunisian.8a7339105df893c4eaf3.jpg",
+    "static/media/delivery.jpg": "/static/media/delivery.82982a84bb83518839e6.jpg",
+    "static/media/chef.jpg": "/static/media/chef.2a2b1d57518d9fea38de.jpg",
+    "static/media/pancakes.avif": "/static/media/pancakes.3837bcca823d30342c45.avif",
+    "static/media/client.jpg": "/static/media/client.4a8509e26a4e9f903fd8.jpg",
+    "static/media/delivery2.jpg": "/static/media/delivery2.66a40c085332054b582c.jpg",
+    "static/media/chef3.jpg": "/static/media/chef3.2034c6d3cd115cd94ba5.jpg",
+    "static/media/ma9rouna.png": "/static/media/ma9rouna.91e6b4b04936f649e619.png",
+    "static/media/client2.jpg": "/static/media/client2.ac155c70016a24f0e4ff.jpg",
+    "static/media/plate4.png": "/static/media/plate4.bbc578b085847f804a12.png",
+    "static/media/sandwich.jpg": "/static/media/sandwich.1415d9b3c147adf544a1.jpg",
+    "static/media/Smoothies.avif": "/static/media/Smoothies.af18d25445047516c878.avif",
+    "static/media/djej.jpg": "/static/media/djej.29a9d0ab16eeb05850cd.jpg",
+    "static/media/7OUT.jpg": "/static/media/7OUT.ead2730c656a707ce028.jpg",
+    "static/media/STEAK.jpg": "/static/media/STEAK.7c388e9364438f89d43a.jpg",
+    "static/media/couscous.jpg": "/static/media/couscous.d825637f275ced9880ed.jpg",
+    "static/media/burger.jpg": "/static/media/burger.d4ade904c81e7ce24a80.jpg",
+    "static/media/omelette-piquante.jpeg": "/static/media/omelette-piquante.78c5de4e88e943f3f4a7.jpeg",
+    "static/media/chakchouka.webp": "/static/media/chakchouka.f92d486d7812e4d87792.webp",
+    "index.html": "/index.html",
+    "main.f0a36208.css.map": "/static/css/main.f0a36208.css.map",
+    "main.4319d1ba.js.map": "/static/js/main.4319d1ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0a36208.css",
+    "static/js/main.4319d1ba.js"
+  ]
+}
