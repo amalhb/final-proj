@@ -1,6 +1,6 @@
 
 .rotating-image {
-    animation: rotate 30s infinite linear;
+    animation: rotate 20s infinite linear;
   }
   
   @keyframes rotate {
@@ -12,6 +12,7 @@
     }
   }
   
+
   @keyframes slideInLeft {
     0% {
       transform: translateX(-100%);
@@ -42,6 +43,7 @@
     animation: slideInUp 1.5s ease forwards;
   }
   
+  
   @keyframes bounce {
     0%, 100% {
       transform: translateY(0);
@@ -55,3 +57,4 @@
     animation: bounce 1s infinite;
     display: inline-block;
   }
+  
