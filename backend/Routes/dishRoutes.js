@@ -1,5 +1,5 @@
 const express = require('express');
-const dishController = require('../Controllers/dishController');
+const dishController = require('../Controller/dishController.js');
 
 const router = express.Router();
 

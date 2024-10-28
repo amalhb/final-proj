@@ -1,26 +1,23 @@
 const express = require("express");
-const cors = require('cors');
-const dishRoutes = require('./Routes/dishRoutes');
-const bodyParser = require('body-parser');
-const categoryRouter = require('./Routes/categoryDishRoutes.js');
-const creatdishRouter=require('./Routes/creatDishRoute.js')
-const chiefRouter = require('./Routes/chiefRoutes.js');
-const authroutes = require ("./Routes/authroutes.js")
-
+const cors = require("cors");
+const dishRoutes = require("./Routes/dishRoutes");
+const bodyParser = require("body-parser");
+const categoryRouter = require("./Routes/categoryDishRoutes.js");
+const creatdishRouter = require("./Routes/creatDishRoute.js");
+const chiefRouter = require("./Routes/chiefRoutes.js");
+const authroutes = require("./Routes/authroutes.js");
 
 const app = express();
-app.use(bodyParser.json());
-app.use(express.json());
+
 app.use(cors());
+app.use(express.urlencoded({ extends:true }));
+app.use(express.json());
 
- 
-app.use('/api', dishRoutes); 
-app.use('/api', categoryRouter);
-app.use('/api', creatdishRouter);
-app.use('/api', chiefRouter);
-app.use("/api", authroutes)
-
-
+app.use("/api/users", authroutes);
+app.use("/api/dish", dishRoutes);
+app.use("/api/category", categoryRouter);
+app.use("/api/create", creatdishRouter);
+app.use("/api", chiefRouter);
 
 const PORT = 5000;
 app.listen(PORT, (err) => {
