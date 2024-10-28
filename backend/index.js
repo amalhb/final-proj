@@ -10,14 +10,14 @@ const authroutes = require("./Routes/authroutes.js");
 const app = express();
 
 app.use(cors());
-app.use(express.urlencoded({ extends:true }));
+app.use(express.urlencoded({ extends: true }));
 app.use(express.json());
 
 app.use("/api/users", authroutes);
 app.use("/api/dish", dishRoutes);
 app.use("/api/category", categoryRouter);
 app.use("/api/create", creatdishRouter);
-app.use("/api", chiefRouter);
+app.use("/api/chief", chiefRouter);
 
 const PORT = 5000;
 app.listen(PORT, (err) => {
