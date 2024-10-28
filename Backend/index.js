@@ -1,24 +1,22 @@
-const express =require("express");
+const express = require('express');
+const bodyParser = require('body-parser');
+const dishRoutes = require('./Routes/dishRoutes.js');
+const orderRoutes =require('./Routes/orderRoute.js')
+
+const app = express();
+app.use(bodyParser.json());
+app.use(dishRoutes);
 
 
 
 
-
-const app =express();
-
-
-const data =[{
-   
+app.use('/api/orders', orderRoutes);
 
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the API');
+});
 
-
-}]
-
-
-
-
-
-app.listen (5000,()=>{}
-console.log(serverur en marche  )
-)
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
