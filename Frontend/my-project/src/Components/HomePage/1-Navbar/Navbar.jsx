@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
@@ -19,6 +20,12 @@ function Navbar() {
               Home
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
             </Link>
+
+             <Link to="/client-dashboard" className="text-gray-800 font-medium relative group">
+              user Profile  
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
+            </Link> 
+
             <a
               href="#menu"
               className="text-gray-800 font-medium relative group"
@@ -55,6 +62,7 @@ function Navbar() {
             >
               Sign Up
             </Link>
+            
           </div>
 
           <div className="md:hidden flex items-center">
@@ -86,6 +94,12 @@ function Navbar() {
           </Link>
           <Link to="/signup" className="block px-4 py-2 text-blue-500 hover:bg-gray-200">
             Sign Up
+          </Link>
+          <Link to="/orders" className="block px-4 py-2 text-blue-500 hover:bg-gray-200">
+            My orders
+          </Link>
+          <Link to="/client-dashboard" className="block px-4 py-2 text-blue-500 hover:bg-gray-200">
+            user profile
           </Link>
         </div>
       )}
