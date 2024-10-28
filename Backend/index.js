@@ -1,22 +1,26 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const dishRoutes = require('./Routes/dishRoutes.js');
-const orderRoutes =require('./Routes/orderRoute.js')
+const express = require("express");
+const cors = require("cors");
+const dishRoutes = require("./Routes/dishRoutes");
+const bodyParser = require("body-parser");
+const categoryRouter = require("./Routes/categoryDishRoutes.js");
+const creatdishRouter = require("./Routes/creatDishRoute.js");
+const chiefRouter = require("./Routes/chiefRoutes.js");
+const authroutes = require("./Routes/authroutes.js");
 
 const app = express();
-app.use(bodyParser.json());
-app.use(dishRoutes);
 
+app.use(cors());
+app.use(express.urlencoded({ extends: true }));
+app.use(express.json());
 
+app.use("/api/users", authroutes);
+app.use("/api/dish", dishRoutes);
+app.use("/api/category", categoryRouter);
+app.use("/api/create", creatdishRouter);
+app.use("/api/chief", chiefRouter);
 
-
-app.use('/api/orders', orderRoutes);
-
-
-app.get('/', (req, res) => {
-  res.send('Welcome to the API');
-});
-
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000');
+const PORT = 5000;
+app.listen(PORT, (err) => {
+  if (err) console.log(err);
+  console.log(`Server is running on port ${PORT}`);
 });
