@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const categoryRouter = require('./Routes/categoryDishRoutes.js');
 const creatdishRouter=require('./Routes/creatDishRoute.js')
 const chiefRouter = require('./Routes/chiefRoutes.js');
+const authroutes = require ("./Routes/authroutes.js")
 
 
 const app = express();
@@ -17,6 +18,7 @@ app.use('/api', dishRoutes);
 app.use('/api', categoryRouter);
 app.use('/api', creatdishRouter);
 app.use('/api', chiefRouter);
+app.use("/api", authroutes)
 
 
 

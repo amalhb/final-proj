@@ -3,8 +3,7 @@ const {
     registerClient,
     registerChef,
     registerDeliveryBoy,
-    registerAdmin,
-    login,
+    login
 } = require('../Controllers/authController');
 
 const router = express.Router();
@@ -17,11 +16,6 @@ router.post('/chef/register', registerChef);
 
 // DeliveryBoy Routes
 router.post('/deliveryboy/register', registerDeliveryBoy);
-
-// Admin Routes
-router.post('/admin/register', registerAdmin);
-
-// Universal Login Route
-router.post('/login', login);
+ router.post('/login',login)
 
 module.exports = router;
